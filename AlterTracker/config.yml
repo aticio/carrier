@@ -1,0 +1,1 @@
+mongoUrl: "mongodb://username:password@dbhost:dbport/seed"

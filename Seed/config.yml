@@ -1,0 +1,2 @@
+logPath: "./log"
+mongoUrl: "mongodb://username:password@dbhost:dbport/seed"

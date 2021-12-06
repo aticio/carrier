@@ -1,0 +1,7 @@
+libertyMBeansPath: "/IBMJMXConnectorREST/mbeans/"
+libertyUsername: "liberty_username"
+libertyPassword: "liberty_password"
+metricConfPath: "metricConf.yml"
+metricContextSuffix: "/attributes"
+jvmJsonPath: $..[?(@.className=="com.ibm.ws.management.j2ee.mbeans.JVMMBeanImpl")].objectName
+jvmJsonPath2: $..[?(@.className=="com.ibm.ws.app.manager.internal.ApplicationConfigurator$NamedApplication$2")].objectName

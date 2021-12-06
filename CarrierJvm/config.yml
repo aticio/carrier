@@ -1,0 +1,5 @@
+libertyUsername: "liberty_username"
+libertyPassword: "liberty_password"
+tickInSeconds: 10
+jvmCheckContext: "/IBMJMXConnectorREST"
+kafkaVMs: "kafkahost1:kafkaport1,kafkahost2:kafkaport2"

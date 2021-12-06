@@ -1,0 +1,15 @@
+syntax = "proto3";
+package com.carrier.server;
+
+service ServerService {
+    rpc HandleServer(Server) returns (Result);
+}
+
+message Server {
+    string host = 1;
+    string port = 2;
+}
+
+message Result {
+    string status = 1;
+}

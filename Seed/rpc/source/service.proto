@@ -1,0 +1,40 @@
+syntax = "proto3";
+
+package com.carrier.seed;
+
+service SeedService {
+    rpc AddSeed(Seed) returns (Result);
+    rpc GetSeed(Seed) returns (Seed);
+    rpc UpdateSeed(Seed) returns (Result);
+    rpc GetAll(Void) returns (Seeds);
+}
+
+message Seed {
+    string host = 1;
+    string port = 2;
+    string jvm = 3;
+    string username = 4;
+    string password = 5;
+    message Attribute {
+        string type = 1;
+        string name = 2;
+        string url = 3;
+        string interval = 4;
+        message Metric {
+            string name = 1;
+            string jpath = 2;
+        }
+        repeated Metric metrics = 5;
+    }
+    repeated Attribute attributes = 6;
+}
+
+message Result {
+    string status = 1;
+}
+
+message Seeds {
+    repeated Seed seeds = 1;
+}
+
+message Void {}

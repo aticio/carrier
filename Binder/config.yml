@@ -1,0 +1,6 @@
+logPath: "./log"
+libertyMBeansPath: "/IBMJMXConnectorREST/mbeans/"
+libertyUsername: "liberty_username"
+libertyPassword: "liberty_password"
+metricConfPath: "metricConf.yml"
+metricContextSuffix: "/attributes"

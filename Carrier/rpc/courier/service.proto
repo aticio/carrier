@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package com.carrier.carrier;
+
+service CarrierService {
+    rpc UpdateCarrier(Carrier) returns (Result);
+    rpc AddCarrier(Carrier) returns (Result);
+    rpc DeleteCarrier(Void) returns (Result);
+}
+
+message Carrier {
+    string host = 1;
+    string port = 2;
+}
+
+message Result {
+    string status = 1;
+}
+
+message Void{}

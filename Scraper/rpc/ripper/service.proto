@@ -1,0 +1,14 @@
+syntax = "proto3";
+import public "carrier/Seed/rpc/seed/service.proto";
+
+package com.carrier.scraper;
+
+
+service ScraperService {
+    rpc GetServerSeed(Server) returns (com.carrier.seed.Seed);
+}
+
+message Server {
+    string host = 1;
+    string port = 2;
+}
