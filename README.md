@@ -3,9 +3,7 @@
 Application server monitoring tool written in Go language.
 Also a base project for my golang examples.
 
-# 
-
-### You can find examples of: ###
+## You can find examples of: ##
 
 * Basic microservice structure
 * gRPC usage with increased data size
